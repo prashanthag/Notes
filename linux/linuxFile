@@ -1,0 +1,16 @@
+*   compress symbol link :   
+            !tar cJvhf -  readonly Week\ 2 Week\ 3 Week\ 4  | split --bytes 200M -      NeuralNetworksDeepLearning.tar.
+* file transfer 
+      install netcat pv tar 
+      source :  tar cf - /home/sk/test.file | pv | netcat 192.168.1.105 7000
+      destination:  nc -l -p 7000 | pv | tar x
+• swap file system is need 
+    https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
+    
+• empty cache  
+    https://unix.stackexchange.com/questions/87908/how-do-you-empty-the-buffers-and-cache-on-a-linux-system
+
+• to see unmounted disk
+    lsblk
+•  To set up nvme on ubuntu 
+     https://richardstechnotes.com/2015/12/18/setting-up-an-nvme-ssd-on-ubuntu-14-04-lts/
