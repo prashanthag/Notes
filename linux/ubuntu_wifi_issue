@@ -1,0 +1,95 @@
+dmesg -T 
+
+Sun Aug 11 15:21:35 2019] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enable
+
+
+
+• sudo modprobe iwlwifi
+syslog
+
+Aug 11 15:19:06 ina-4k kernel: [  661.196675] Intel(R) Wireless WiFi driver for Linux
+Aug 11 15:19:06 ina-4k kernel: [  661.196680] Copyright(c) 2003- 2015 Intel Corporation
+Aug 11 15:19:06 ina-4k kernel: [  661.197103] cfg80211: World regulatory domain updated:
+Aug 11 15:19:06 ina-4k kernel: [  661.197106] cfg80211:  DFS Master region: unset
+Aug 11 15:19:06 ina-4k kernel: [  661.197107] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+Aug 11 15:19:06 ina-4k kernel: [  661.197109] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+Aug 11 15:19:06 ina-4k kernel: [  661.197112] cfg80211:   (2457000 KHz - 2482000 KHz @ 20000 KHz, 92000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+Aug 11 15:19:06 ina-4k kernel: [  661.197113] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (N/A, 2000 mBm), (N/A)
+Aug 11 15:19:06 ina-4k kernel: [  661.197115] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+Aug 11 15:19:06 ina-4k kernel: [  661.197117] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (0 s)
+Aug 11 15:19:06 ina-4k kernel: [  661.197119] cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (N/A, 2000 mBm), (0 s)
+Aug 11 15:19:06 ina-4k kernel: [  661.197121] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+Aug 11 15:19:06 ina-4k kernel: [  661.197123] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+Aug 11 15:19:06 ina-4k kernel: [  661.197678] iwlwifi 0000:05:00.0: Direct firmware load for iwlwifi-7265D-19.ucode failed with error -2
+Aug 11 15:19:06 ina-4k kernel: [  661.197687] iwlwifi 0000:05:00.0: Direct firmware load for iwlwifi-7265D-18.ucode failed with error -2
+Aug 11 15:19:06 ina-4k kernel: [  661.198232] iwlwifi 0000:05:00.0: loaded firmware version 17.352738.0 op_mode iwlmvm
+Aug 11 15:19:06 ina-4k kernel: [  661.218540] iwlwifi 0000:05:00.0: Detected Intel(R) Dual Band Wireless AC 3165, REV=0x210
+Aug 11 15:19:06 ina-4k kernel: [  661.218873] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+Aug 11 15:19:06 ina-4k kernel: [  661.219567] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+Aug 11 15:19:06 ina-4k kernel: [  661.287127] ieee80211 phy0: Selected rate control algorithm 'iwl-mvm-rs'
+Aug 11 15:19:06 ina-4k NetworkManager[931]: <info>  [1565561946.4587] wifi-nl80211: (wlan0): using nl80211 for WiFi device control
+Aug 11 15:19:06 ina-4k NetworkManager[931]: <info>  [1565561946.4589] device (wlan0): driver supports Access Point (AP) mode
+Aug 11 15:19:06 ina-4k NetworkManager[931]: <info>  [1565561946.4624] manager: (wlan0): new 802.11 WiFi device (/org/freedesktop/NetworkManager/Devices/7)
+Aug 11 15:19:06 ina-4k kernel: [  661.295956] iwlwifi 0000:05:00.0 wlp5s0: renamed from wlan0
+Aug 11 15:19:06 ina-4k systemd-udevd[5300]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Aug 11 15:19:06 ina-4k NetworkManager[931]: <info>  [1565561946.4686] rfkill3: found WiFi radio killswitch (at /sys/devices/pci0000:00/0000:00:1c.5/0000:05:00.0/ieee80211/phy0/rfkill3) (driver iwlwifi)
+Aug 11 15:19:06 ina-4k systemd[1]: Starting Load/Save RF Kill Switch Status...
+Aug 11 15:19:06 ina-4k systemd[1]: Started Load/Save RF Kill Switch Status.
+Aug 11 15:19:06 ina-4k NetworkManager[931]: <info>  [1565561946.4984] devices added (path: /sys/devices/pci0000:00/0000:00:1c.5/0000:05:00.0/net/wlp5s0, iface: wlp5s0)
+Aug 11 15:19:06 ina-4k NetworkManager[931]: <info>  [1565561946.4985] device added (path: /sys/devices/pci0000:00/0000:00:1c.5/0000:05:00.0/net/wlp5s0, iface: wlp5s0): no ifupdown configuration found.
+Aug 11 15:19:06 ina-4k NetworkManager[931]: <info>  [1565561946.4999] device (wlp5s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Aug 11 15:19:06 ina-4k kernel: [  661.330302] IPv6: ADDRCONF(NETDEV_UP): wlp5s0: link is not ready
+Aug 11 15:19:06 ina-4k kernel: [  661.330688] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+Aug 11 15:19:06 ina-4k kernel: [  661.331498] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+Aug 11 15:19:06 ina-4k kernel: [  661.392763] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+Aug 11 15:19:06 ina-4k kernel: [  661.393350] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+Aug 11 15:19:06 ina-4k kernel: [  661.432611] IPv6: ADDRCONF(NETDEV_UP): wlp5s0: link is not ready
+Aug 11 15:19:09 ina-4k ModemManager[769]: <info>  Couldn't check support for device '/sys/devices/pci0000:00/0000:00:1c.5/0000:05:00.0': not supported by any plugin
+
+
+dmesg
+[Sun Aug 11 15:22:52 2019] cfg80211: World regulatory domain updated:
+[Sun Aug 11 15:22:52 2019] cfg80211:  DFS Master region: unset
+[Sun Aug 11 15:22:52 2019] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+[Sun Aug 11 15:22:52 2019] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+[Sun Aug 11 15:22:52 2019] cfg80211:   (2457000 KHz - 2482000 KHz @ 20000 KHz, 92000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+[Sun Aug 11 15:22:52 2019] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (N/A, 2000 mBm), (N/A)
+[Sun Aug 11 15:22:52 2019] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+[Sun Aug 11 15:22:52 2019] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (0 s)
+[Sun Aug 11 15:22:52 2019] cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (N/A, 2000 mBm), (0 s)
+[Sun Aug 11 15:22:52 2019] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+[Sun Aug 11 15:22:52 2019] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+[Sun Aug 11 15:22:52 2019] Intel(R) Wireless WiFi driver for Linux
+[Sun Aug 11 15:22:52 2019] Copyright(c) 2003- 2015 Intel Corporation
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: Direct firmware load for iwlwifi-7265D-19.ucode failed with error -2
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: Direct firmware load for iwlwifi-7265D-18.ucode failed with error -2
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: loaded firmware version 17.352738.0 op_mode iwlmvm
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: Detected Intel(R) Dual Band Wireless AC 3165, REV=0x210
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+[Sun Aug 11 15:22:52 2019] ieee80211 phy0: Selected rate control algorithm 'iwl-mvm-rs'
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0 wlp5s0: renamed from wlan0
+[Sun Aug 11 15:22:52 2019] IPv6: ADDRCONF(NETDEV_UP): wlp5s0: link is not ready
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+[Sun Aug 11 15:22:52 2019] iwlwifi 0000:05:00.0: L1 Enabled - LTR Enabled
+[Sun Aug 11 15:22:52 2019] IPv6: ADDRCONF(NETDEV_UP): wlp5s0: link is not ready
+
+journal xe 
+
+Aug 11 15:56:00 ina-4k ifup[6115]: RTNETLINK answers: File exists
+Aug 11 15:56:00 ina-4k ifup[6115]: Failed to bring up enp4s0.
+Aug 11 15:56:00 ina-4k systemd[1]: networking.service: Main process exited, code=exited, status=1/FAILURE
+Aug 11 15:56:00 ina-4k systemd[1]: networking.service: Failed with result 'exit-code'.
+Aug 11 15:56:00 ina-4k systemd[1]: Failed to start Raise network interfaces.
+-- Subject: Unit networking.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit networking.service has failed.
+-- 
+-- The result is RESULT.
+Aug 11 15:56:00 ina-4k polkitd(authority=local)[739]: Unregistered Authentication Agent for unix-process:6088:115187 (system bus name :1.149, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, 
+lines 1392-1444/1444 (END)
+
